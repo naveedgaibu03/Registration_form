@@ -36,7 +36,7 @@ To use this project on your local machine, follow these steps:
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+There is no license so any one can copy the code
 
 ## Contact
 
