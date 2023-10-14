@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Successful</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b6b0b;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Successful</h1>
+        <p>Hello, <span id="username"></span>!</p>
+        <p>Your registration was successful. You can now log in using your credentials.</p>
+        <!-- We can add more information or links here as needed. -->
+    </div>
+
+    <script>
+        // Extract username from URL query parameter (assuming you pass it from your registration script)
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+
+        // Display the username on the page
+        if (username) {
+            document.getElementById('username').textContent = username;
+        }
+    </script>
+</body>
+</html>

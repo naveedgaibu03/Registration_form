@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/script.js"></script>
+    <style>
+        body {
+            background-image: url('image4.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+        <form id="registrationForm" action="process_form.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" required><br><br>
+    
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" name="hobbies[]" value="Sports"> Sports
+        <input type="checkbox" name="hobbies[]" value="Reading"> Reading
+        <input type="checkbox" name="hobbies[]" value="Traveling"> Traveling
+        <input type="checkbox" name="hobbies[]" value="Coding"> Coding
+        <input type="checkbox" name="hobbies[]" value="Cooking"> Cooking
+        <br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
+
+<label for="state">State:</label>
+<select name="state" required>
+    <option value="">Select a state</option>
+    <option value="MAHARASHTRA">MAHARASHTRA</option>
+    <option value="KARNATAKA">KARNATAKA</option>
+    <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+    <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+    <option value="RAJSTHAN">RAJSTHAN</option>
+    <option value="BIHAR">BIHAR</option>
+    <option value="HARYANA">HARYANA</option>
+    <option value="TAMIL NADU">TAMIL NADU</option>
+    <option value="UP">UP</option>
+    <option value="GUJRAT">GUJRAT</option>
+    <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+    <option value="ASSAM">ASSAM</option>
+    <option value="PUNJAB">PUNJAB</option>
+    <option value="ODISHA">ODISHA</option>
+    <!-- We Can Add more states as needed -->
+</select>
+<br><br>
+
+        <label for="address">Address:</label>
+        <textarea name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="resume">Resume (.docx)(.Pdf):</label>
+        <input type="file" name="resume" accept=".docx" required><br><br>
+
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="reset" value="Reset">
+    </form>
+</body>
+</html>
